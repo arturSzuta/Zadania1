@@ -1,6 +1,6 @@
-package Day1;
+/*package Day1;
 
-public class Main {
+public class Task2 {
     public static void main(String[] args) {
         displayWordDecimal();
         System.out.println();
@@ -33,3 +33,5 @@ public class Main {
         System.out.print(a);
     }
 }
+
+ */
