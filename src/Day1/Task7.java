@@ -7,10 +7,8 @@ public class Task7 {
     private static void printPrimeNumbers(int number) {
         for(int i = 2; i < number; i++) {
             boolean isPrime = true;
-            for(int j = 2; j < i; j++) {
-                if(i % j == 0) {
+                if(number % i == 0) {
                     isPrime = false;
-                }
                 }
             if(isPrime) {
                 System.out.print(" " + i + ",");
