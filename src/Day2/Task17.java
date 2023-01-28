@@ -1,4 +1,4 @@
-package Day2;
+/*package Day2;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -31,3 +31,4 @@ public class Task17 {
         return tmpArray;
     }
 }
+*/
