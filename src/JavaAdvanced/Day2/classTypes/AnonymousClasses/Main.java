@@ -9,6 +9,6 @@ public class Main {
             public void makeSound() {
                 System.out.println("Anonymous Class");
             }
-        }
+        };
     }
 }

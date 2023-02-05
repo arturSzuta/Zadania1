@@ -1,6 +1,8 @@
 package JavaAdvanced.Day2;
 
-import java.sql.SQLOutput;
+import JavaAdvanced.Day2.interfaces.HousePet;
+import JavaAdvanced.Day2.interfaces.impl.GuineaPig;
+import JavaAdvanced.Day2.interfaces.impl.Zombie;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,6 +35,19 @@ public class Main {
         for(Animals animal : animals) {
             animal.makeSound();
         }
+        System.out.println("*********");
+
+        HousePet pig = new GuineaPig();
+        GuineaPig pig2 = new GuineaPig();
+
+        HousePet zombie1 = new Zombie();
+        Zombie zombie2 = new Zombie();
+
+        HousePet[] listOfAnimals = {pig,pig2,zombie1,zombie2};
+        for (HousePet x: listOfAnimals){
+            x.makeSound();
+        }
+
     }
 
 }
