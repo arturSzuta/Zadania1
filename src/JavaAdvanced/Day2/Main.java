@@ -1,8 +1,14 @@
 package JavaAdvanced.Day2;
 
 import JavaAdvanced.Day2.interfaces.HousePet;
+import JavaAdvanced.Day2.interfaces.MediaPlayer;
 import JavaAdvanced.Day2.interfaces.impl.GuineaPig;
+import JavaAdvanced.Day2.interfaces.impl.MediaPlayerImpl;
 import JavaAdvanced.Day2.interfaces.impl.Zombie;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,7 +53,24 @@ public class Main {
         for (HousePet x: listOfAnimals){
             x.makeSound();
         }
+        System.out.println("*********");
+        MediaPlayerImpl mediaPlayer = new MediaPlayerImpl();
+        mediaPlayer.next();
+        System.out.println(mediaPlayer.getName());
+        mediaPlayer.stop();
+        System.out.println(MediaPlayerImpl.INTERFACE_NAME);
+        System.out.println(MediaPlayer.getInterfaceName());
 
+        List<String> names = new ArrayList<>();
+        names.add("Will");
+        names.add("Mike");
+        names.add("Bob");
+
+        List<Integer> numbers = new LinkedList<>();
+        numbers.add(1);
+        numbers.add(4);
+        numbers.add(2);
+        numbers.add(3);
     }
 
 }
